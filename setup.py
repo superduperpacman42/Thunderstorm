@@ -20,7 +20,7 @@ for pkg in PACKAGES:
     if type(pkg) == str: EXCLUDES.remove(pkg)
     else: EXCLUDES.remove(pkg[1])
 
-executables = [cx_Freeze.Executable("game.py", base = "Win32GUI", icon="Icon.ico")]
+executables = [cx_Freeze.Executable("main.py", base = "Win32GUI", icon="Icon.ico")]
 cx_Freeze.setup(
     name="Thunderstorm",
     description="Ludum Dare 51",
